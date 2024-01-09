@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+  }
+  
+  .App {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6e8efb, #a777e3); /* Gradient background */
+  }
+  
+  .App-header {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  .emoji-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  .emoji {
+    font-size: 3rem;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
+  }
+  
+  .emoji:hover {
+    transform: scale(1.1);
+    background-color: #ffcc00; /* Yellow background on hover */
+  }
+  
+  .selected {
+    background-color: #ffcc00;
+  }
+  
+  .score-timer {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
