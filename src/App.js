@@ -50,7 +50,7 @@ const App = () => {
   };
 
   const endGame = () => {
-    alert(Time's up! Your score: ${score});
+    alert(`Time's up! Your score: ${score}`);
     setScore(0);
     setTimeLeft(60);
     initializeGame();
@@ -66,7 +66,7 @@ const App = () => {
           {emojis.map((emoji, index) => (
             <button
               key={index}
-              className={emoji ${selectedEmojis.includes(index) ? 'selected' : ''}}
+              className={selectedEmojis.includes(index) ? 'selected' : ''}
               onClick={() => handleEmojiClick(index)}
             >
               {emoji}
@@ -76,6 +76,6 @@ const App = () => {
       </header>
     </div>
   );
-}
+};
 
 export default App;
